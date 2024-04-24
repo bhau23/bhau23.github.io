@@ -14,7 +14,26 @@
         <div class="container">
             <h1 class="sub-title">MY ALL WORKS</h1>
             <div class="work-list">
-                <!-- Example work item 1 -->
+                <!-- work items-1 -->
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>STUDENT DATABASE MANAGEMENT SYSTEM</h3>
+                        <p>Artificial Intelligence (AI) is a game-changer in automating student database management tasks like data entry and report generation. 
+                        </p>
+                        <span class="full-description">I specialize in using
+                            JavaScript
+                            ,
+                            XML
+                            , and
+                            Firebase
+                            to create efficient and responsive systems. AI-powered chatbots provide instant support for students and faculty, enhancing overall user experience</span>
+                        <button class="see-more-button">See more</button>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- work items-1 -->
                 <div class="work">
                     <img src="images/work-1.png">
                     <div class="layer">
@@ -25,64 +44,48 @@
                             XML
                             , and
                             Firebase
-                            to create efficient and responsive systems. AI-powered chatbots provide instant support for students and faculty, enhancing overall user experience</p>
+                            to create efficient and responsive systems. AI-powered chatbots provide instant support for students and faculty, enhancing overall user experience
+                        </p>
+                        <span class="full-description">Additional details about the project...</span>
+                        <button class="see-more-button">See more</button>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-
-                <!-- Example work item 2 -->
+                <!-- work items-1 -->
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/work-1.png">
                     <div class="layer">
-                        <h3>WEBSCRAPING TOOL</h3>
-                        <p>The web scraping website project is a dynamic platform designed to extract data from diverse websites, empowering users to efficiently gather and analyze information. This tool revolutionizes the data collection process by automating the extraction from the web, featuring a user-friendly interface for inputting requirements and obtaining well-organized results. With a backend powered by
-                            Python
-                            and a frontend crafted with
-                            HTML
-                            and
-                            CSS
-                            , this solution is invaluable for researchers, businesses, or anyone looking to streamline the extraction of data from online sources.</p>
+                        <h3>STUDENT DATABASE MANAGEMENT SYSTEM</h3>
+                        <p>Artificial Intelligence (AI) is a game-changer in automating student database management tasks like data entry and report generation. I specialize in using
+                            JavaScript
+                            ,
+                            XML
+                            , and
+                            Firebase
+                            to create efficient and responsive systems. AI-powered chatbots provide instant support for students and faculty, enhancing overall user experience
+                        </p>
+                        <span class="full-description">Additional details about the project...</span>
+                        <button class="see-more-button">See more</button>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <!-- Example work item 3 -->
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>AGUMENTED REALITY FOR ENHANCHING LEARNING EXPERIENCE</h3>
-                        <p>The concept is to develop target-based augmented reality with the goal of revolutionizing education, providing a highly immersive and comprehensible learning experience for children. The innovation involves introducing an app specifically designed to transform static 2D images from study materials into interactive 3D models. Leveraging
-                            Blender
-                            for 3D modeling,
-                            Unity
-                            for cross-platform development, and
-                            Vuforia
-                            for augmented reality, this initiative aims to elevate the educational landscape by seamlessly merging technology with the learning process.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <!-- Example work item 3 -->
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>AGUMENTED REALITY FOR ENHANCHING LEARNING EXPERIENCE</h3>
-                        <p>The concept is to develop target-based augmented reality with the goal of revolutionizing education, providing a highly immersive and comprehensible learning experience for children. The innovation involves introducing an app specifically designed to transform static 2D images from study materials into interactive 3D models. Leveraging
-                            Blender
-                            for 3D modeling,
-                            Unity
-                            for cross-platform development, and
-                            Vuforia
-                            for augmented reality, this initiative aims to elevate the educational landscape by seamlessly merging technology with the learning process.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
             </div>
         </div>   
     </div>
 
     <!-- Scripts -->
+    <script>
+        document.querySelectorAll('.see-more-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const fullDescription = button.parentNode.querySelector('.full-description');
+                fullDescription.classList.toggle('show');
+                button.textContent = fullDescription.classList.contains('show') ? 'See less' : 'See more';
+            });
+        });
+    </script>
+
     <script>
         // JavaScript for side menu functionality
         function openmenu(){
@@ -92,11 +95,5 @@
             document.getElementById("sidemenu").style.width="0";
         }
     </script>
-    <script>
-    document.querySelector('.btn-see-more').addEventListener('click', function() {
-        window.location.href = 'portfolio.html';
-    });
-</script>
-
 </body>
 </html>

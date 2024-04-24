@@ -335,7 +335,7 @@ nav ul li a:hover::after {
 }
 #portfolio .btn-see-more {
     position: absolute;
-    bottom: -2640px;
+    bottom: -2615px;
     left: 50%;
     transform: translateX(-50%);
 }
